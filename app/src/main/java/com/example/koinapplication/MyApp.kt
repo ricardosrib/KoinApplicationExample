@@ -12,7 +12,7 @@ class MyApp : Application() {
         // koin needs to know about the context and which are the dependencies
         startKoin {
             androidContext(this@MyApp)
-            modules(listOf(appModule))
+            modules(listOf(appModule, viewModelModule))
         }
     }
 }
